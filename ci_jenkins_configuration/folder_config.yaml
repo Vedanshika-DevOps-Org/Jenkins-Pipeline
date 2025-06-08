@@ -1,0 +1,11 @@
+permissions:
+  # These users can run any jobs in Jenkins
+  - role: runners
+    groups:
+
+    users:
+      - epulic786@gmail.com
+
+  - role: viewers
+    groups:
+  
