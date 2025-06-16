@@ -1,0 +1,24 @@
+- name: DJ-Build
+  type: MultiBranch
+  description: multibranch build pipeline 
+  permissions: 
+  - role: runners
+    groups:
+      - 'epublic786@gmail.com'
+    users: 
+  - role: viewers
+    users:
+  url: https://github.com/epublic9/terraform.git
+  credentail_id: 'github-token'
+  path: Jenkinsfile
+  id: 'dj-build'
+  filter:
+    include: 'lz-* dev'
+    exclude: 'main'
+  trigger_suppresion:
+    branch: 'de*'
+    strategy: 'NONE'
+    
+  
+
+      
